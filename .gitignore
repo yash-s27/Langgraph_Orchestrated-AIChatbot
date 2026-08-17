@@ -1,0 +1,54 @@
+# ==========================================
+# Database & Vector Stores (ChromaDB)
+# ==========================================
+# Ignore the local Chroma database directory and SQLite logs
+.chroma/
+chroma/
+chroma_db/
+chromadb/
+*.chroma
+ChromaDB
+*.db
+
+# SQLite temporary database files
+*.sqlite3-wal
+*.sqlite3-shm
+*.db-wal
+*.db-shm
+
+
+# ==========================================
+# Environment Variables & Secrets (Essential)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.env
+.secrets
+*.pem
+*.key
+
+# ==========================================
+# Virtual Environments & Dependencies
+# ==========================================
+# Python
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg
+.pytest_cache/
+__pycache__/
+*.pyc
+
+# Node.js
+node_modules/
+npm-debug.log*
+
+# ==========================================
+# IDE & System Files
+# ==========================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
