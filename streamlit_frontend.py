@@ -79,7 +79,7 @@ threads = st.session_state["chat_threads"][::-1]
 selected_thread = None
 
 # ============================ Sidebar ============================
-st.sidebar.title("LangGraph Chatbot")
+st.sidebar.title("LangGraph Chatbot💻")
 
 current_title = get_cached_title(thread_key)
 st.sidebar.markdown(f"**{current_title}**")
@@ -143,7 +143,7 @@ for message in st.session_state["message_history"]:
     with st.chat_message(message["role"]):
         st.text(message["content"])
 
-user_input = st.chat_input("Ask about your document or use tools")
+user_input = st.chat_input("What can i help you today..😊")
 
 if user_input:
     st.session_state["message_history"].append({"role": "user", "content": user_input})
